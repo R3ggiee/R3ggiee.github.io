@@ -1,0 +1,110 @@
+/* Display HTML5 structural elements as blocks */
+footer,
+header,
+section,
+nav {
+    display: block;
+    /* Display as block */
+}
+
+header {
+    width: 100%;
+    /* Set width */
+    margin: 0px -10px 0px -10px;
+    /* Set margins */
+    margin-top: -20px;
+}
+
+/* Style for the home page title */
+header h1 {
+    width: 101%;
+    /* Set text shadow */
+    font-family: Garamond;
+    /* Set font family */
+    text-align: center;
+    background-image: linear-gradient(rgb(118, 124, 136), rgba(118, 124, 136, 0.525), rgb(255, 255, 255));
+    /* Set background image */
+}
+
+/*style to have the menu overlay an image*/
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 13%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.342);
+    z-index: 2;
+}
+
+/*code for the words over the image*/
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.myFirstName {
+    text-shadow: 2px 8px 7px rgb(108, 106, 106);
+    font-size: 50px;
+    position: absolute;
+    top: 35%;
+    right: 24%;
+}
+
+.myLastName {
+    text-shadow: 2px 8px 7px rgb(108, 106, 106);
+    font-size: 50px;
+    position: absolute;
+    top: 41%;
+    right: 26.4%;
+}
+
+.quote{
+    text-shadow: 2px 8px 7px rgb(73, 56, 56);
+    font-size: 50px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.quote2{
+    text-shadow: 2px 8px 7px rgb(73, 56, 56);
+    font-size: 50px;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+nav ul {
+    /* Set background color */
+    text-align: right;
+    height: 50px;
+    font-size: x-large;
+}
+
+nav ul li {
+    /* Change display to inline-block */
+    display: inline-block;
+}
+
+nav ul li a {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    margin-right: 70px;
+}
+
+.homeImgSize {
+    margin: 0px -10px 0px -10px;
+    /* Set margins */
+    width: 1273px;
+}
+
+a:hover {
+    text-decoration-line: underline;
+    color: rgba(255, 255, 255, 0.779);
+}
