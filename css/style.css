@@ -46,12 +46,12 @@ header h1 {
     color: white;
 }
 
-.myFirstName {
+.topwords {
     text-shadow: 2px 8px 7px rgb(108, 106, 106);
     font-size: 50px;
     position: absolute;
     top: 35%;
-    right: 24%;
+    right: 20%;
 }
 
 .myLastName {
@@ -59,10 +59,10 @@ header h1 {
     font-size: 50px;
     position: absolute;
     top: 41%;
-    right: 26.4%;
+    right: 22.5%;
 }
 
-.quote{
+.quote {
     text-shadow: 2px 8px 7px rgb(73, 56, 56);
     font-size: 50px;
     position: absolute;
@@ -70,7 +70,7 @@ header h1 {
     left: 10%;
 }
 
-.quote2{
+.quote2 {
     text-shadow: 2px 8px 7px rgb(73, 56, 56);
     font-size: 50px;
     position: absolute;
@@ -108,3 +108,71 @@ a:hover {
     text-decoration-line: underline;
     color: rgba(255, 255, 255, 0.779);
 }
+
+footer {
+    text-align: center;
+    /* Align text center */
+    font-size: 10px;
+    /* Set font size */
+    font-family: Garamond;
+    /* Set font family */
+}
+
+section {
+    text-align: center;
+    font-size: x-large;
+    width: 100%;
+    gap: 30px;
+
+}
+
+section a img:hover {
+    width: 30%;
+    height: 32%;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+section img {
+    width: 30%;
+    height: 32%;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.9s ease-in-out;
+}
+
+
+
+section {
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.image {
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 800px;
+    overflow: hidden;
+    box-shadow: 0 0 13px rgba(10, 10, 10, 0.429);
+    transition: transform 0.4s ease-in-out;
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+
+.image img {
+    width: 500px;
+    height: 680px;
+}
+
+
