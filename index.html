@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reginald Hankins</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="resources/jquery-3.7.1.js"></script>
     <!--Need these three lines of code to use react-->
 </head>
 
@@ -24,12 +25,54 @@
         </h1>
         <div class="container">
             <img class="homeImgSize" id="home_img" src="images/IMG_4976.jpeg" alt="Picture of me">
-            <div class="myFirstName">REGINALD</div>
-            <div class="myLastName">HANKINS</div>            
+            <script>
+                $(document).ready(function () {
+                    /*This line allows the screen to auto scrol when you load it...
+                    this searches for all the id="wrapper" and apply the animation to them*/
+                    $('#wrapper').animate({ 'margin-right': '50px' }, 2500);
+                });
+                $(document).ready(function () {
+                    /*This line allows the screen to auto scrol when you load it...
+                    this searches for all the id="wrapper" and apply the animation to them*/
+                    $('#wrapper2').animate({ 'margin-right': '50px' }, 3500);
+                });
+            </script>
+            <div id="wrapper" class="topwords">REGINALD</div>
+            <div id="wrapper2" class="myLastName">HANKINS</div>
         </div>
     </header>
-    
-
+    <br>
+    <section>
+        <h2>PHOTOS OF MYSELF</h2>
+        <div class="gallery">
+            <div class="image">
+                <img src="images/lookingDownPic.jpeg" alt="Picture of me">
+            </div>
+            <div class="image">
+                <img src="images/freshmanYear.jpg" alt="Freshman year picture">
+            </div>
+            <div class="image">
+                <img src="images/suitPose.jpg" alt="Picture of me in a suit">
+            </div>
+        </div>
+    </section>
+    <br>
+    <section>
+        <div class="gallery">
+            <div class="image">
+                <img src="images/highschoolGraduation.jpg" alt="Highschool Graduation">
+            </div>
+            <div class="image">
+                <img src="images/CanadaPic.jpg" alt="Picture of me in Canada">
+            </div>
+            <div class="image">
+                <img src="images/selfie.jpg" alt="Selfie of myself">
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <footer>&copy; Reginald Hankins</footer>
 </body>
 
 </html>
