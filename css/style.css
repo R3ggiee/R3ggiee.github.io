@@ -3,30 +3,41 @@ footer,
 header,
 section,
 nav {
-    display: block;
-    /* Display as block */
+    display: block; /* Display as block */
+}
+
+body,
+html,
+p,
+img {
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    width: 100%;
-    /* Set width */
-    margin: 0px -10px 0px -10px;
-    /* Set margins */
+    width: 100%; /* Set width */
+    margin: 0px -10px 0px -10px; /* Set margins */
     margin-top: -20px;
 }
 
 /* Style for the home page title */
 header h1 {
-    width: 101%;
-    /* Set text shadow */
-    font-family: Garamond;
-    /* Set font family */
+    width: 101%; /* Set text shadow */
+    font-family: Garamond; /* Set font family */
     text-align: center;
-    background-image: linear-gradient(rgb(118, 124, 136), rgba(118, 124, 136, 0.525), rgb(255, 255, 255));
-    /* Set background image */
+    background-image: linear-gradient(rgb(118, 124, 136), rgba(118, 124, 136, 0.525), rgb(255, 255, 255)); /* Set background image */
 }
 
-/*style to have the menu overlay an image*/
+ul li {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+div p {
+    font-weight: bold;
+}
+
+/* Style to have the menu overlay an image */
 #overlay {
     position: fixed;
     width: 100%;
@@ -35,59 +46,74 @@ header h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.342);
+    background-color: rgba(255, 255, 255, 0.463);
     z-index: 2;
 }
 
-/*code for the words over the image*/
+/* Code for the words over the image */
 .container {
     position: relative;
     text-align: center;
     color: white;
 }
 
-.topwords {
+.topWords,
+.bottomWords,
+.myLastName,
+.quote,
+.quote2,
+.theEnd,
+.imgOverlay {
     text-shadow: 2px 8px 7px rgb(108, 106, 106);
     font-size: 50px;
     position: absolute;
+}
+
+.topWords {
     top: 35%;
     right: 20%;
 }
 
+.bottomWords {
+    top: 40%;
+    right: 22%;
+}
+
 .myLastName {
-    text-shadow: 2px 8px 7px rgb(108, 106, 106);
-    font-size: 50px;
-    position: absolute;
-    top: 41%;
-    right: 22.5%;
+    top: 30%;
+    right: 40%;
 }
 
 .quote {
-    text-shadow: 2px 8px 7px rgb(73, 56, 56);
-    font-size: 50px;
-    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.imgOverlay {
     top: 20%;
     left: 10%;
+    font-size: 30px;
+    color: white;
 }
 
 .quote2 {
-    text-shadow: 2px 8px 7px rgb(73, 56, 56);
-    font-size: 50px;
-    position: absolute;
-    top: 25%;
+    top: 15%;
     left: 10%;
 }
 
+.theEnd {
+    top: 10%;
+    left: 42%;
+}
+
 nav ul {
-    /* Set background color */
-    text-align: right;
+    text-align: right; /* Set background color */
     height: 50px;
     font-size: x-large;
 }
 
 nav ul li {
-    /* Change display to inline-block */
-    display: inline-block;
+    display: inline-block; /* Change display to inline-block */
 }
 
 nav ul li a {
@@ -99,8 +125,7 @@ nav ul li a {
 }
 
 .homeImgSize {
-    margin: 0px -10px 0px -10px;
-    /* Set margins */
+    margin: 0px -10px 0px -10px; /* Set margins */
     width: 1273px;
 }
 
@@ -110,12 +135,14 @@ a:hover {
 }
 
 footer {
-    text-align: center;
-    /* Align text center */
-    font-size: 10px;
-    /* Set font size */
-    font-family: Garamond;
-    /* Set font family */
+    text-align: center; /* Align text center */
+    font-size: 20px; /* Set font size */
+    font-family: Garamond; /* Set font family */
+    background-color: rgba(192, 192, 192, 0.226);
+}
+
+.background {
+    background-color: rgba(0, 0, 0, 0.338);
 }
 
 section {
@@ -123,7 +150,17 @@ section {
     font-size: x-large;
     width: 100%;
     gap: 30px;
+}
 
+.colorLink {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.colorLink:hover {
+    color: black;
+    text-decoration: none;
 }
 
 section a img:hover {
@@ -140,16 +177,74 @@ section img {
     transition: transform 0.9s ease-in-out;
 }
 
-
-
-section {
-    text-align: center;
-}
-
 h2 {
-    font-size: 24px;
+    position: relative;
     text-align: center;
+    font-size: 24px;
+    padding: 0 20px; /* Add padding to prevent lines from crossing through words */
 }
+
+h2::before,
+h2::after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    width: calc(40% - 55px); /* Adjusted width to ensure lines don't cross through words */
+    height: 2px;
+    background-color: black;
+}
+
+h2::before {
+    left: 0;
+}
+
+h2::after {
+    right: 0;
+}
+
+.resume {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resume-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.resume-header p {
+    margin: 0;
+    font-size: 18px;
+    color: #777;
+}
+
+.resume-content {
+    margin-top: 10px;
+}
+
+.resume-section {
+    margin-bottom: 20px;
+}
+
+.resume-section h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.resume-section p {
+    margin: 0;
+    font-size: 16px;
+}
+
 
 .gallery {
     display: flex;
@@ -172,7 +267,103 @@ h2 {
 
 .image img {
     width: 500px;
-    height: 680px;
+    height: 740px;
 }
 
+.container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
 
+.image-overlay {
+    position: relative;
+}
+
+.image-overlay img {
+    width: 100%;
+}
+
+.text-content p {
+    width: 500px;
+    height: 680px;
+    background-color: rgba(212, 129, 129, 0.7);
+    padding: 20.8px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.text-content2 p {
+    width: 500px;
+    height: 365px;
+    background-color: rgba(96, 194, 255, 0.74);
+    padding: 20.8px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.text-content3 p {
+    color: black;
+    width: 500px;
+    height: 365px;
+    background-color: rgba(231, 231, 231, 0.685);
+    padding: 20.8px;
+    font-size: 20px;
+    text-align: left;
+}
+
+/* Style the tabs */
+#tabs {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab {
+    float: left;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: background-color 0.3s;
+}
+
+.tab:hover {
+    background-color: #ddd;
+}
+
+/* Style the tab content */
+.tabContent {
+    display: none;
+    padding: 20px;
+    border-top: none;
+}
+
+/* Show the first tab content by default */
+#essay1 {
+    display: block;
+}
+
+#essay1 p,
+#essay2 p {
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: 100;
+}
+
+.essay-container {
+    margin-bottom: 20px; /* Add space between essay sections */
+    padding: 20px; /* Add padding for better readability */
+    border: 1px solid #ccc; /* Add border for separation */
+    border-radius: 5px; /* Round the corners */
+    background-color: #f9f9f9; /* Add background color */
+}
+
+.essay-container h2 {
+    font-size: 24px; /* Increase font size of essay titles */
+    margin-bottom: 10px; /* Add space below titles */
+}
+
+.essay-container p {
+    font-size: 16px; /* Set font size for essay content */
+    line-height: 1.5; /* Set line height for better readability */
+}
