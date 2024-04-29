@@ -1,7 +1,3 @@
-
-
-
-
 // Function to open the selected tab and hide others
 function openTab(evt, tabName) {
     // Get all elements with class="tabContent" and hide them
