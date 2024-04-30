@@ -125,6 +125,10 @@ nav ul li a {
     margin-right: 70px;
 }
 
+div ul li{
+    font-weight: 100; 
+}
+
 .homeImgSize {
     margin: 0px -10px 0px -10px; /* Set margins */
     width: 1273px;
