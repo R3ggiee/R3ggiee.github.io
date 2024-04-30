@@ -60,7 +60,7 @@ div p {
 
 .topWords,
 .bottomWords,
-.myLastName,
+.aboutQuote,
 .quote,
 .quote2,
 .theEnd,
@@ -80,9 +80,9 @@ div p {
     right: 22%;
 }
 
-.myLastName {
+.aboutQuote {
     top: 30%;
-    right: 40%;
+    right: 35%;
 }
 
 .quote {
