@@ -348,7 +348,8 @@ h2::after {
 }
 
 #essay1 p,
-#essay2 p {
+#essay2 p,
+#essay3 p {
     text-align: left;
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
