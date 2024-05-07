@@ -176,7 +176,7 @@ section a img:hover {
 }
 
 section img {
-    width: 30%;
+    width: 100%;
     height: 32%;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
     transition: transform 0.9s ease-in-out;
