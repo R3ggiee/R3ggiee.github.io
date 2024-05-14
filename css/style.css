@@ -182,6 +182,10 @@ section img {
     transition: transform 0.9s ease-in-out;
 }
 
+section a img{
+    width: 30%;
+}
+
 h2 {
     position: relative;
     text-align: center;
